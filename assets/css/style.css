@@ -22,7 +22,7 @@ header{
     background-color: var(--mdpink);
     color: var(--white);
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 5px;
     font-family: 'Pacifico', cursive;
     border-radius: 10px;
     border-style: none;
@@ -37,10 +37,30 @@ header{
 .car-img {
     display: block;
     width: 50%;
-    margin: 75px auto 50px;
+    margin: 65px auto 50px;
   }
 #search-imput{
     padding: 15px;
     font-family: Comfortaa;
-    margin: 30px;
+    margin: 20px;
+}
+
+/* Pages 3 and 4 */
+
+#creatorContainer{
+    background-color: var(--lightpink);
+    margin-top: 50px;
+}
+
+.creators{
+    background-color: var(--darkpink);
+}
+
+h4{
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+ 
+p{
+    background-color: var(--mdpink);
 }
