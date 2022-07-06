@@ -11,16 +11,21 @@ header{
     color:var(--white);
     text-align: center;
     font-family: Pacifico;
-
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-/*Fist Page*/
+/*First Page*/
 
 .searchBtn{
     background-color: var(--mdpink);
     color: var(--white);
     padding: 10px;
     margin-top: 25px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 10px;
+    border-style: none;
 }
 
 .center { 
@@ -31,11 +36,11 @@ header{
 }
 .car-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
+    margin: 75px auto 50px;
   }
 #search-imput{
     padding: 15px;
     font-family: Comfortaa;
+    margin: 30px;
 }
