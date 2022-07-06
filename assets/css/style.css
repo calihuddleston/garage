@@ -48,19 +48,49 @@ header{
 /* Pages 3 and 4 */
 
 #creatorContainer{
-    background-color: var(--lightpink);
-    margin-top: 50px;
+    margin: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px; 
+    gap: calc(45px + 5%);
+    
 }
 
 .creators{
-    background-color: var(--darkpink);
+    background-color: var(--mdpink);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+    padding: 10px;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.creatorImg{
+    margin: auto auto;
+    border-radius: 10px;
 }
 
 h4{
     font-family: 'Pacifico', cursive;
     color: white;
+    background-color: var(--darkpink);
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    
 }
  
 p{
-    background-color: var(--mdpink);
+    background-color: var(--lightpink);
+    font-size: small;
+    font-family: Comfortaa;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px dashed var(--white);
+    font-weight: bold;
 }
