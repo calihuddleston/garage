@@ -28,17 +28,12 @@ header{
     border-style: none;
 }
 
-.center { 
-    font-family: Pacifico;
-    font-size:x-large;
-    border-radius: 15px;
-    border-color: var(--mdpink);
-}
 .car-img {
     display: block;
     width: 50%;
     margin: 65px auto 50px;
   }
+
 #search-imput{
     padding: 15px;
     font-family: Comfortaa;
@@ -95,3 +90,4 @@ p{
     border: 2px dashed var(--white);
     font-weight: bold;
 }
+
