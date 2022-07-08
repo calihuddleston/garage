@@ -28,12 +28,6 @@ header{
     border-style: none;
 }
 
-.center { 
-    font-family: Pacifico;
-    font-size:x-large;
-    border-radius: 15px;
-    border-color: var(--mdpink);
-}
 .car-img {
     display: block;
     width: 50%;
@@ -43,6 +37,42 @@ header{
     padding: 15px;
     font-family: Comfortaa;
     margin: 20px;
+}
+
+/*Second Page*/
+
+.parking{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 1em;
+    padding-left:5px;
+    margin-left: 10px;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.BackBtn{
+    background-color: var(--mdpink);
+    color: var(--white);
+    margin-right: 25px;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.right {
+    display:flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+.center { 
+    font-family: Pacifico;
+    font-size:x-large;
+    border-radius: 15px;
+    border-color: var(--mdpink);
 }
 
 /* Pages 3 and 4 */
@@ -56,7 +86,25 @@ header{
     
 }
 
-.creators{
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column-item {
+    flex: 1 0 61%;  /* flex-grow, flex-shrink, flex-basis */
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--lightpink);
+  }
+  
+  .column-item:nth-of-type(4),
+  .column-item:nth-of-type(5) {
+    flex-basis: 40%;
+  }
+
+  .creators{
     background-color: var(--mdpink);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -89,7 +137,7 @@ p{
     font-size: small;
     font-family: Comfortaa;
     margin: 2px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px dashed var(--white);
     font-weight: bold;
