@@ -33,6 +33,7 @@ header{
     width: 50%;
     margin: 65px auto 50px;
   }
+
 #search-imput{
     padding: 15px;
     font-family: Comfortaa;
@@ -129,6 +130,7 @@ h4{
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+    padding: 3px;
     
 }
  
@@ -142,3 +144,4 @@ p{
     border: 2px dashed var(--white);
     font-weight: bold;
 }
+
