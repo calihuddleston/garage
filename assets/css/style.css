@@ -91,3 +91,6 @@ p{
     font-weight: bold;
 }
 
+.hide{
+    display: none;
+}
