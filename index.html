@@ -22,13 +22,14 @@
     <div>
         <img src="https://cdn.pixabay.com/photo/2012/04/12/19/17/car-30250_960_720.png" alt="car" class="car-img">
     </div>
+    <div id="map"></div>
     <div class="container">
         <div class="row">
             
                 <form id="search-form">
-                    <input class="col-12" id="search-imput" type="text" placeholder="Search your next destination here...."> 
+                    <input class="col-12" id="search-input" type="text" placeholder="Search your next destination here...."> 
                     <div class="d-grid gap-2 col-3 mx-auto">
-                        <button class="searchBtn">Search</button>
+                        <button class="searchBtn" onclick="placeSearch(event)">Search</button>
                     </div>
                 </form>
             
@@ -42,5 +43,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjDm3etvNz344yfeMwR1zkdT6__kMZeE&libraries=places&callback=initMap">
+</script>
 </body>
 </html>
