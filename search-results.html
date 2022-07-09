@@ -19,7 +19,9 @@
       rel="stylesheet"
     />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
     <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -33,9 +35,14 @@
         <span> <i>Showing results for your destination . . . </i></span>
       </h3>
       <div class="right">
-        <button class="BackBtn">
+        <button class="BackBtn" onclick="redirectFunc()">
           <span style="font-size:15px;">&#8656; </span> Go Back
         </button>
+        <script>
+            function redirectFunc() {
+              window.location.href = "index.html";
+            }
+          </script>
       </div>
     </div>
 
