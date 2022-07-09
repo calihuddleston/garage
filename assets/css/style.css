@@ -34,7 +34,7 @@ header{
     margin: 65px auto 50px;
   }
 
-#search-imput{
+#search-input{
     padding: 15px;
     font-family: Comfortaa;
     margin: 20px;
@@ -152,3 +152,15 @@ p{
 .hide{
     display: none;
 }
+
+#map {
+    height: 75%;
+    position: fixed;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
