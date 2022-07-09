@@ -40,6 +40,17 @@ header{
     margin: 20px;
 }
 
+#iconBtn{
+    background-color: var(--mdpink);
+    padding: 20px;
+    margin: 40px 30px;
+    border-radius: 60px;
+    border-style: none;
+    position: fixed;
+    
+}
+
+
 /*Second Page*/
 
 .parking{
@@ -152,6 +163,8 @@ p{
 .hide{
     display: none;
 }
+
+
 
 #map {
     height: 75%;
