@@ -43,11 +43,11 @@ header{
 #iconBtn{
     background-color: var(--mdpink);
     padding: 20px;
-    margin: 40px 30px;
     border-radius: 60px;
     border-style: none;
-    position: fixed;
-    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
