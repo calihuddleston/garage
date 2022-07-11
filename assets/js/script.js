@@ -33,3 +33,4 @@ function nameDisplay(){
 
 }
 
+//4loogs and map with address 
