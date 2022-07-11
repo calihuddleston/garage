@@ -21,3 +21,16 @@ async function placeSearch(event){ //gets the users input
    
 }
 
+//WHAT TO GET NAMES AND ADDRESS FROM PINPOINT. W/ NAMES MAKE FUNCTION TO CREATE 4LOOP INPUT EL WITH BNT. AFTER 4LOOP CHANGE VALUE TO NAME AND VALUE 
+function nameDisplay(){
+    var allData = JSON.parse(localStorage.getItem('data'))
+    console.log(allData)
+    let placement = $(".parking")
+    $(placement).children().each((row, i) =>{
+        $(i).html(allData[row].name)
+        console.log(allData[row].name)
+    })
+
+}
+
+//4loogs and map with address 

@@ -32,8 +32,8 @@ function initMap() {
         type: ['parking'],
       };
       service.nearbySearch(nearbyRequest, (nresults, nstatus) => {
-        if (nstatus == google.maps.places.PlacesServiceStatus.OK) {
-            console.log(nstatus)
+        if (nstatus == google.maps.places.PlacesServiceStatus.OK) { storeResults(nresults)
+            console.log(nresults)
           for (let i = 0; i < nresults.length; i++) {
             createMarker(nresults[i]);
           }
@@ -43,6 +43,13 @@ function initMap() {
   });
 }
 
+//getting data info
+function storeResults (nresults){
+    console.log('store')
+  localStorage.setItem('data', JSON.stringify(nresults))
+  console.log('movingon')
+  nameDisplay()
+}
 
 function createMarker(place) {
   if (!place.geometry || !place.geometry.location) return;
