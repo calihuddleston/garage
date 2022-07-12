@@ -35,7 +35,7 @@ function initMap() {
         if (nstatus == google.maps.places.PlacesServiceStatus.OK) { storeResults(nresults)
             console.log(nresults)
           for (let i = 0; i < nresults.length; i++) {
-            createMarker(nresults[i]);
+            //createMarker(nresults[i]); //<GIVES ALL REAULTS
           }
         }
       });
@@ -51,16 +51,26 @@ function storeResults (nresults){
   nameDisplay()
 }
 
-function createMarker(place) {
+function createMarker(place, box) {
   if (!place.geometry || !place.geometry.location) return;
 
   const marker = new google.maps.Marker({
     map,
     position: place.geometry.location,
+    animation: google.maps.Animation.DROP,
   });
-
+  $(box).hover(()=>{toggleBounce(marker)})
 }
-console.log(localStorage.getItem('query'))
+//console.log(localStorage.getItem('query'))
+
+// makes the markers bounce
+function toggleBounce(marker) {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
 
 
 

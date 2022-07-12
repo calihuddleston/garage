@@ -27,16 +27,15 @@ function nameDisplay(){
     console.log(allData)
     let placement = $(".parking")
     $(placement).children().each((row, i) =>{
+        createMarker(allData[row], i)
         $(i).html(allData[row].name)
         console.log(allData[row].name)
         $(i).on('click', ()=>{getDirections(allData[row].geometry.location)})
     })
 
-    //get t the 3rd page when clicked on w/ map directions
-    //window.location.href = 'search-results.html'
-
-    
 }
+
+//get t the 3rd page when clicked on w/ map directions
 function getDirections(finalDestination){
         localStorage.setItem('finalDestination', finalDestination)
         window.location.href = 'map.html'
@@ -45,6 +44,7 @@ function getDirections(finalDestination){
     function makeDirections(){
         // called as soon as map.html is loaded
         // load finalDestination from localStorage
+        localStorage.getItem('finalDestination')
         // generate map
     }
     
