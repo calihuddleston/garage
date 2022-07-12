@@ -29,8 +29,22 @@ function nameDisplay(){
     $(placement).children().each((row, i) =>{
         $(i).html(allData[row].name)
         console.log(allData[row].name)
+        $(i).on('click', ()=>{getDirections(allData[row].geometry.location)})
     })
 
-}
+    //get t the 3rd page when clicked on w/ map directions
+    //window.location.href = 'search-results.html'
 
-//4loogs and map with address 
+    
+}
+function getDirections(finalDestination){
+        localStorage.setItem('finalDestination', finalDestination)
+        window.location.href = 'map.html'
+    }
+
+    function makeDirections(){
+        // called as soon as map.html is loaded
+        // load finalDestination from localStorage
+        // generate map
+    }
+    

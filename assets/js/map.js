@@ -60,6 +60,8 @@ function createMarker(place) {
   });
 
 }
-
-
 console.log(localStorage.getItem('query'))
+
+
+
+
