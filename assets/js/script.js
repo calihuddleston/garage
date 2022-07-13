@@ -33,4 +33,9 @@ function nameDisplay(){
 
 }
 
-//4loogs and map with address 
+let creatorsBtn = $('#iconBtn')
+
+creatorsBtn.on('click', () => {
+    console.log('you clicked the button!');
+    window.location.href = 'map.html'
+}) //4loogs and map with address 
