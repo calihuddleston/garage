@@ -23,3 +23,8 @@
 
 <img width="1440" alt="Screen Shot 2022-07-12 at 7 24 40 PM" src="https://user-images.githubusercontent.com/105446523/178615008-5783795c-1581-4c2a-8619-c026c77ec4a8.png">
 
+# 🛠 Skills
+
+- Javascript
+- CSS
+- HTML
