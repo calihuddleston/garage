@@ -1,9 +1,10 @@
 
 # Garage
 
-# Project
+# About Project
 
-# Acknowledgements:
+
+
 
 # User Story:
 - As A Driver I WANT to search up a parking garage in different cities on GoogleMap
