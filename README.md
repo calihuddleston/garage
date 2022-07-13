@@ -2,7 +2,8 @@
 # Garage
 
 # About Project
-## If you often travel to bigger cities, you know that it is a STRUGGLE to find available parking spaces. 
+
+If you often travel to bigger cities, you know that it is a STRUGGLE to find available parking spaces. 
 It often results in frustration and time lost on the original plan you had for the day!
 That’s why my team and I created Park Me! So you can conveniently access parking and get back to your day.
 
