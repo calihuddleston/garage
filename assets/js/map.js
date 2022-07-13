@@ -25,7 +25,7 @@ function initMap() {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
       map.setCenter(results[0].geometry.location);
       createMarker(results[0])
-
+        localStorage.setItem('start', JSON.stringify(results[0].geometry.location)) //location entered
       const nearbyRequest = {
         location: results[0].geometry.location,
         radius: 500,
@@ -35,7 +35,7 @@ function initMap() {
         if (nstatus == google.maps.places.PlacesServiceStatus.OK) { storeResults(nresults)
             console.log(nresults)
           for (let i = 0; i < nresults.length; i++) {
-            //createMarker(nresults[i]); //<GIVES ALL REAULTS
+            //createMarker(nresults[i]); //<GIVES ALL RESULTS
           }
         }
       });

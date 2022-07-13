@@ -22,6 +22,8 @@ async function placeSearch(event){ //gets the users input
 }
 
 //WHAT TO GET NAMES AND ADDRESS FROM PINPOINT. W/ NAMES MAKE FUNCTION TO CREATE 4LOOP INPUT EL WITH BNT. AFTER 4LOOP CHANGE VALUE TO NAME AND VALUE 
+
+
 function nameDisplay(){
     var allData = JSON.parse(localStorage.getItem('data'))
     console.log(allData)
@@ -35,16 +37,38 @@ function nameDisplay(){
 
 }
 
-//get t the 3rd page when clicked on w/ map directions
+//get to the 3rd page when clicked on w/ map directions
 function getDirections(finalDestination){
-        localStorage.setItem('finalDestination', finalDestination)
+        localStorage.setItem('finalDestination', JSON.stringify(finalDestination))
         window.location.href = 'map.html'
-    }
+}
 
-    function makeDirections(){
-        // called as soon as map.html is loaded
-        // load finalDestination from localStorage
-        localStorage.getItem('finalDestination')
-        // generate map
-    }
+function calcRoute(directionsService,directionsRenderer) {
+    var start = JSON.parse(localStorage.getItem('start'));
+    var end = JSON.parse(localStorage.getItem('finalDestination'));
+    var request = {
+      origin: start,
+      destination: end,
+      travelMode: 'DRIVING'
+    };
+    directionsService.route(request, function(result, status) {
+      if (status == 'OK') {
+        directionsRenderer.setDirections(result);
+      }
+    });
+  }
+
+function directionsMap(){
+        var directionsService = new google.maps.DirectionsService();
+        var directionsRenderer = new google.maps.DirectionsRenderer();
+        const mapOptions = {
+         zoom:15,
+        }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  directionsRenderer.setMap(map);
+calcRoute(directionsService,directionsRenderer)
+  
+}
+
+
     
