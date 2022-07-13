@@ -25,7 +25,7 @@ function initMap() {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
       map.setCenter(results[0].geometry.location);
       createMarker(results[0])
-
+        localStorage.setItem('start', JSON.stringify(results[0].geometry.location)) //location entered
       const nearbyRequest = {
         location: results[0].geometry.location,
         radius: 500,
@@ -35,7 +35,7 @@ function initMap() {
         if (nstatus == google.maps.places.PlacesServiceStatus.OK) { storeResults(nresults)
             console.log(nresults)
           for (let i = 0; i < nresults.length; i++) {
-            createMarker(nresults[i]);
+            //createMarker(nresults[i]); //<GIVES ALL RESULTS
           }
         }
       });
@@ -51,15 +51,27 @@ function storeResults (nresults){
   nameDisplay()
 }
 
-function createMarker(place) {
+function createMarker(place, box) {
   if (!place.geometry || !place.geometry.location) return;
 
   const marker = new google.maps.Marker({
     map,
     position: place.geometry.location,
+    animation: google.maps.Animation.DROP,
   });
+  $(box).hover(()=>{toggleBounce(marker)})
+}
+//console.log(localStorage.getItem('query'))
 
+// makes the markers bounce
+function toggleBounce(marker) {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
 
 
-console.log(localStorage.getItem('query'))
+
+
