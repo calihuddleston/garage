@@ -8,6 +8,7 @@ let map;
 let service;
 let infowindow;
 
+// insert map for second page and gets location
 function initMap() {
   infowindow = new google.maps.InfoWindow();
   map = new google.maps.Map(document.getElementById("map"), {
@@ -20,6 +21,7 @@ function initMap() {
     fields: ["name", "geometry"],
   };
 
+  // get information to work into the maps
   service = new google.maps.places.PlacesService(map);
   service.findPlaceFromQuery(request, (results, status) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
