@@ -39,3 +39,7 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 - Javascript
 - CSS
 - HTML
+
+# Deployment
+
+- https://calihuddleston.github.io/park-me/
