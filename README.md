@@ -29,11 +29,12 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 - THEN it takes me to that location
 
 # Mock-Up:
-<img width="1410" alt="Screen Shot 2022-07-12 at 7 20 18 PM" src="https://user-images.githubusercontent.com/105446523/178614888-0b34ef24-3037-4b90-b97b-d3c2f8da4179.png">
 
-<img width="1440" alt="Screen Shot 2022-07-12 at 7 24 40 PM" src="https://user-images.githubusercontent.com/105446523/178615008-5783795c-1581-4c2a-8619-c026c77ec4a8.png">
+<img width="1356" alt="img5" src="https://user-images.githubusercontent.com/105446523/179026005-49b08067-fa63-4d37-8f8a-a331946511a9.png">
 
-<img width="1427" alt="img3" src="https://user-images.githubusercontent.com/105446523/178880005-3d0a72fa-615c-4920-b56e-e47ffb51a900.png">
+<img width="1440" alt="img6" src="https://user-images.githubusercontent.com/105446523/179026069-76278c0a-c0f1-4789-b197-97f198497480.png">
+
+<img width="1433" alt="img7" src="https://user-images.githubusercontent.com/105446523/179026101-2f2ad262-8945-47ac-9e54-239747d5b8e5.png">
 
 <img width="1430" alt="img4" src="https://user-images.githubusercontent.com/105446523/178880029-fa6b04e5-0387-47b7-b76e-e24cf7cb2ac3.png">
 
