@@ -41,9 +41,16 @@ let creatorsBtn = $('#iconBtn')
 
 creatorsBtn.on('click', () => {
     console.log('you clicked the button!');
-    window.location.href = 'map.html'
-}) //4loogs and map with address 
-//get to the 3rd page when clicked on w/ map directions
+    $('#map').addClass('hide');
+    $('.parkMe').addClass('hide');
+    $('footer').addClass('hide');
+
+    $('.creatorHeader').removeClass('hide');
+    $('#creatorContainer').removeClass('hide');
+    $('.creators').removeClass('hide');
+})
+
+
 function getDirections(finalDestination){
         localStorage.setItem('finalDestination', JSON.stringify(finalDestination))
         window.location.href = 'map.html'
