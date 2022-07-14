@@ -19,6 +19,7 @@ function initMap() {
   const request = {
     query: localStorage.getItem('query'),
     fields: ["name", "geometry"],
+    Referer: 'https://calihuddleston.github.io/park-me/search-results.html'
   };
 
   // get information to work into the maps
