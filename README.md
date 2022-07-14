@@ -15,20 +15,21 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 
 
 
-# User Story:
+# User Story
  
 - As a user I want to search for my destination and access parking garages near by
 - So that I can park with ease
 
 
-# Acceptance Criteria:
+# Acceptance Criteria
+
 - GIVEN using a web application that allows a user to enter their destination (park, zoo, venue, city, etc.).
 - WHEN I enter a destination and click search
 - THEN Google Maps generates with location tags with parking garage locations in the surrounding area
 - WHEN I hover over a location tag and click on it 
 - THEN it takes me to that exact location 
 
-# Mock-Up:
+# Mock-Up
 
 <img width="1356" alt="img5" src="https://user-images.githubusercontent.com/105446523/179026005-49b08067-fa63-4d37-8f8a-a331946511a9.png">
 
