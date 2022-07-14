@@ -37,6 +37,7 @@ function nameDisplay(){
 
 }
 
+// when clicked displays creators page
 let creatorsBtn = $('#iconBtn')
 
 creatorsBtn.on('click', () => {
@@ -50,7 +51,7 @@ creatorsBtn.on('click', () => {
     $('.creators').removeClass('hide');
 })
 
-
+// display directions on the final page
 function getDirections(finalDestination){
         localStorage.setItem('finalDestination', JSON.stringify(finalDestination))
         window.location.href = 'map.html'
