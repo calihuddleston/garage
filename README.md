@@ -12,16 +12,17 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 
 
 # User Story:
-- As A Driver I WANT to search up a parking garage in different cities on GoogleMap
  
-  SO THAT I can find parking nearby
+- As a user I want to search for my destination and access parking garages near by
+  So that I can park with ease
+
 
 # Acceptance Criteria:
-- GIVEN I am searching for a parking garage in the City
+- GIVEN using a web application that allows a user to enter their destination     (park, zoo, venue, city, etc.).
   WHEN I enter a city 
-  THEN it takes me to a map with multiple parking garage locations in that City
-  WHEN I hover over a parking garage location it takes me to the destination
-  THEN I can click on it
+  THEN it takes me to a map with multiple parking garage locations near that location
+  WHEN I hover over a location tag and click on it 
+  THEN it takes me to that location
 
 # Mock-Up:
 <img width="1410" alt="Screen Shot 2022-07-12 at 7 20 18 PM" src="https://user-images.githubusercontent.com/105446523/178614888-0b34ef24-3037-4b90-b97b-d3c2f8da4179.png">
