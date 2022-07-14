@@ -1,7 +1,12 @@
 
-# Garage
+# :car: Park Me
 
 # About Project
+
+If you often travel to bigger cities, you know that it is a STRUGGLE to find available parking spaces. 
+It often results in frustration and time lost on the original plan you had for the day!
+That’s why my team and I created Park Me! So you can conveniently access parking and get back to your day.
+
 
 
 
@@ -23,3 +28,8 @@
 
 <img width="1440" alt="Screen Shot 2022-07-12 at 7 24 40 PM" src="https://user-images.githubusercontent.com/105446523/178615008-5783795c-1581-4c2a-8619-c026c77ec4a8.png">
 
+# 🛠 Skills
+
+- Javascript
+- CSS
+- HTML
