@@ -37,7 +37,20 @@ function nameDisplay(){
 
 }
 
-//get to the 3rd page when clicked on w/ map directions
+let creatorsBtn = $('#iconBtn')
+
+creatorsBtn.on('click', () => {
+    console.log('you clicked the button!');
+    $('#map').addClass('hide');
+    $('.parkMe').addClass('hide');
+    $('footer').addClass('hide');
+
+    $('.creatorHeader').removeClass('hide');
+    $('#creatorContainer').removeClass('hide');
+    $('.creators').removeClass('hide');
+})
+
+
 function getDirections(finalDestination){
         localStorage.setItem('finalDestination', JSON.stringify(finalDestination))
         window.location.href = 'map.html'
@@ -64,7 +77,7 @@ function directionsMap(){
         const mapOptions = {
          zoom:15,
         }
-        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
   directionsRenderer.setMap(map);
 calcRoute(directionsService,directionsRenderer)
   
