@@ -24,7 +24,7 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 # Acceptance Criteria:
 - GIVEN using a web application that allows a user to enter their destination (park, zoo, venue, city, etc.).
 - WHEN I enter a destination and click search
-- THEN googlemaps generates with location tags with parking garage locations in the surrounding area
+- THEN Google Maps generates with location tags with parking garage locations in the surrounding area
 - WHEN I hover over a location tag and click on it 
 - THEN it takes me to that exact location 
 
@@ -44,5 +44,12 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 - Javascript
 - CSS
 - HTML
+
+# APIs
+- Google Maps
+- Geolocations
+
+# CSS Framework
+- Tailwind
 
 
