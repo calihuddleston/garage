@@ -20,7 +20,7 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 # Acceptance Criteria:
 - GIVEN using a web application that allows a user to enter their destination     (park, zoo, venue, city, etc.).
   WHEN I enter a city 
-  THEN it takes me to a map with multiple parking garage locations near that city
+  THEN it takes me to a map with multiple parking garage locations near that location
   WHEN I hover over a location tag and click on it 
   THEN it takes me to that location
 
