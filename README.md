@@ -28,6 +28,11 @@ That’s why my team and I created Park Me! So you can conveniently access parki
 
 <img width="1440" alt="Screen Shot 2022-07-12 at 7 24 40 PM" src="https://user-images.githubusercontent.com/105446523/178615008-5783795c-1581-4c2a-8619-c026c77ec4a8.png">
 
+<img width="1427" alt="img3" src="https://user-images.githubusercontent.com/105446523/178880005-3d0a72fa-615c-4920-b56e-e47ffb51a900.png">
+
+<img width="1430" alt="img4" src="https://user-images.githubusercontent.com/105446523/178880029-fa6b04e5-0387-47b7-b76e-e24cf7cb2ac3.png">
+
+
 # 🛠 Skills
 
 - Javascript
