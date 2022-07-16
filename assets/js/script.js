@@ -78,7 +78,7 @@ function directionsMap(){
         const mapOptions = {
          zoom:15,
         }
-        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
   directionsRenderer.setMap(map);
 calcRoute(directionsService,directionsRenderer)
   
